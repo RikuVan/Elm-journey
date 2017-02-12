@@ -1,0 +1,17 @@
+button {
+  @include colors($aqua, $navy);
+  &:hover {
+    background-color: darken($aqua, 10%)
+  }
+  margin-top: 1rem;
+  padding: 1rem 1.3rem;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+div.main {
+  @include grid-row(10em, 10em);
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+}

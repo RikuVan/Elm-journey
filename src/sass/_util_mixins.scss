@@ -1,0 +1,20 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin spacing--vert($top, $bottom) {
+  padding-top:    $top;
+  padding-bottom: $bottom;
+}
+
+@mixin spacing--horz($left, $right) {
+  padding-left:   $left;
+  padding-right:  $right;
+}
+
+@mixin spacing($vert--top, $vert--bottom, $horz-left, $horz-right) {
+  @include spacing--vert($vert--top, $vert--bottom);
+  @include spacing--horz($horz-left, $horz-right);
+}
+
